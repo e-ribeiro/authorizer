@@ -1,4 +1,4 @@
-# Sistema de Autorização de Transações - Itaú
+# Sistema de Autorização de Transações
 
 ## 🏗️ Arquitetura Serverless e Orientada a Eventos
 
@@ -300,7 +300,7 @@ transacaoRepository.Save(ctx, transacao)
 ## 📋 Estrutura do Projeto
 
 ```
-📁 itau-authorizer/
+📁 authorizer/
 ├── 📁 cmd/authorizer/           # Ponto de entrada
 │   └── main.go                  # Dependency injection
 ├── 📁 internal/
