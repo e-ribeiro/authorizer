@@ -1,9 +1,9 @@
 package service
 
 import (
+	"authorizer/internal/core/domain"
 	"context"
 	"errors"
-	"itau/authorizer/internal/core/domain"
 	"time"
 )
 

@@ -31,7 +31,7 @@ variable "environment" {
 variable "project_name" {
   description = "Nome do projeto"
   type        = string
-  default     = "itau-authorizer"
+  default     = "authorizer"
 }
 
 # Tags padrão para todos os recursos

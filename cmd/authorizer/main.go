@@ -8,12 +8,12 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/aws/aws-sdk-go-v2/service/dynamodb"
 
-	"itau/authorizer/internal/core/domain"
-	"itau/authorizer/internal/core/service"
-	awslambda "itau/authorizer/internal/handler/lambda"
-	"itau/authorizer/internal/observability/logger"
-	"itau/authorizer/internal/observability/tracing"
-	dynamorepo "itau/authorizer/internal/repository/dynamodb"
+	"authorizer/internal/core/domain"
+	"authorizer/internal/core/service"
+	awslambda "authorizer/internal/handler/lambda"
+	"authorizer/internal/observability/logger"
+	"authorizer/internal/observability/tracing"
+	dynamorepo "authorizer/internal/repository/dynamodb"
 )
 
 func main() {
@@ -27,7 +27,7 @@ func main() {
 
 	// Inicialização dos componentes de observabilidade
 	structuredLogger := logger.NewStructuredLogger()
-	simpleTracer := tracing.NewSimpleTracer("itau-authorizer")
+	simpleTracer := tracing.NewSimpleTracer("transaction-authorizer")
 
 	// Inicialização dos repositórios
 	limiteRepository := dynamorepo.NewLimiteRepository(dynamoClient, clientesTableName)

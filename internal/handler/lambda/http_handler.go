@@ -1,11 +1,11 @@
 package awslambda
 
 import (
+	"authorizer/internal/core/domain"
+	"authorizer/internal/core/service"
 	"context"
 	"encoding/json"
 	"fmt"
-	"itau/authorizer/internal/core/domain"
-	"itau/authorizer/internal/core/service"
 	"net/http"
 	"time"
 
@@ -177,7 +177,7 @@ func (h *LambdaHandler) handleHealthCheck(ctx context.Context) (events.APIGatewa
 		"status":    "healthy",
 		"timestamp": time.Now().Format(time.RFC3339),
 		"version":   "1.0.0",
-		"service":   "itau-authorizer",
+		"service":   "transaction-authorizer",
 	}
 
 	responseBody, _ := json.Marshal(healthResponse)

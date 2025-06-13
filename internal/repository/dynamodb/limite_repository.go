@@ -1,10 +1,10 @@
 package dynamodb
 
 import (
+	"authorizer/internal/core/domain"
 	"context"
 	"errors"
 	"fmt"
-	"itau/authorizer/internal/core/domain"
 	"strconv"
 	"time"
 
