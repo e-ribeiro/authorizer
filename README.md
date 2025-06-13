@@ -338,7 +338,7 @@ aws --version  # AWS CLI configurado
 ```bash
 # Clone e configure
 git clone <repo>
-cd itau-authorizer
+cd authorizer
 go mod tidy
 
 # Build
@@ -396,23 +396,3 @@ export SNS_TOPIC_ARN=arn:aws:sns:us-east-1:123456789012:transacoes
    - Runbooks automatizados
 
 ---
-
-## 🤝 Conceitos Demonstrados
-
-Este projeto demonstra conhecimento profundo em:
-
-- ✅ **System Design**: Arquitetura escalável e resiliente
-- ✅ **AWS Serverless**: Lambda, DynamoDB, SNS/SQS
-- ✅ **Clean Architecture**: Separação de responsabilidades
-- ✅ **DDD**: Modelagem rica do domínio
-- ✅ **Observability**: Métricas, logs e tracing
-- ✅ **Concorrência**: Operações atômicas e race conditions
-- ✅ **Event-Driven**: Desacoplamento via eventos
-- ✅ **Testing**: Estrutura testável e mocks
-- ✅ **Production-Ready**: Configuração, logging, métricas
-
----
-
-**Arquitetura por:** Desenvolvedor com foco em System Design e práticas de engenharia de software modernas.
-
-**Princípios aplicados:** SOLID, Clean Architecture, DDD, Event-Driven, Observability, Cloud-Native. 
